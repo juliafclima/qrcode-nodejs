@@ -1,6 +1,6 @@
 import qr from "qrcode-terminal";
 
-import main from "../../index.js";
+import reload from "../../reload.js";
 
 async function handle(err, result) {
   if (err) {
@@ -12,7 +12,7 @@ async function handle(err, result) {
     console.log(qrcode);
   });
 
-  main();
+  reload();
 }
 
 export default handle;

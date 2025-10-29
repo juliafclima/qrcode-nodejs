@@ -1,16 +1,12 @@
-import chalk from "chalk";
-
 import handle from "./handle.js";
-import main from "../../index.js";
-
-const success = chalk.green;
-const subtitle = chalk.yellow;
+import reload from "../../reload.js";
+import { subtitle, success } from "../../utils/chalk.js";
 
 async function createPassword() {
   const password = await handle();
   console.log(`${subtitle("\nsenha gerada: ")} ${success(password)}`);
 
-  main();
+  reload();
 }
 
 export default createPassword;

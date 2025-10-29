@@ -1,7 +1,4 @@
-import chalk from "chalk";
-
-const title = chalk.yellow.bold;
-const subtitle = chalk.yellow;
+import { subtitle, title } from "../utils/chalk.js";
 
 export const QRCodePrompt = [
   {
